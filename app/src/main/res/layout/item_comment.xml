@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingLeft="8dp"
+              android:paddingRight="8dp">
+
+    <TextView
+        android:id="@+id/commentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:text="评论"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16sp"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/defaultLineColor"/>
+
+    <LinearLayout
+        android:id="@+id/commentContextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/material_white"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/nicknameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:textColor="?attr/colorPrimary"
+            android:textSize="12sp"
+            tools:text="Me"/>
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/nicknameTextView"
+            android:layout_marginLeft="8dp"
+
+            android:singleLine="true"
+            android:textColor="@color/defaultShowColor"
+            android:textSize="12sp"
+            android:text="2017-10-27"/>
+
+        <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="4dp"
+            android:textColor="@color/defaultTextColor"
+            android:textSize="14sp"
+            tools:text="haha"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/devLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/defaultLineColor"/>
+
+</LinearLayout>

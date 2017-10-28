@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TieBa</string>
+    <string name="tiezi_title_hint">Enter a title</string>
+    <string name="tiezi_title_label">标题</string>
+    <string name="tiezi_content_hint">来吧..尽情发挥</string>
+    <string name="tiezi_content_label">Content</string>
+    <string name="tiezi_dianzan">赞</string>
+    <string name="tiezi_pinglun">评论</string>
+    <string name="new_tiezi">New TieZi</string>
+    <string name="show_subtitle">Show subtitle</string>
+    <string name="hide_subtitle">Hide subtitle</string>
+    <string name="subtitle_format">%1$d TieZis</string>
+</resources>

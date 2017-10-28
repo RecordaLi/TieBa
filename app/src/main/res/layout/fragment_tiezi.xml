@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_margin="16dp"
+              android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:listSeparatorTextViewStyle"
+        android:text="@string/tiezi_title_label"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tiezi_title"
+        android:background="@color/material_white"
+        android:padding="8dp"
+        android:textColor="@color/defaultTextColor"
+        android:textColorHint="@color/defaultShowColor"
+        android:textSize="20sp"
+        android:hint="加个标题喲"/>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:listSeparatorTextViewStyle"
+        android:text="编辑内容"
+        />
+
+    <EditText
+        android:id="@+id/tiezi_content"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/material_white"
+        android:gravity="top|left"
+        android:hint="来吧..尽情发挥"
+        android:maxLength="140"
+        android:maxLines="10"
+        android:padding="8dp"
+        android:textColor="@color/defaultTextColor"
+        android:textColorHint="@color/defaultShowColor"
+        android:textSize="16sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tiezi_date"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/defaultShowColor"/>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:showDividers="middle">
+
+        <Button
+            android:id="@+id/sort_tiezi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="16dp"
+            android:text="选择帖子分类>"
+            android:textColor="@color/defaultShowColor"
+            android:textSize="16sp"
+            android:clickable="false"/>
+
+    </LinearLayout>
+</LinearLayout>
