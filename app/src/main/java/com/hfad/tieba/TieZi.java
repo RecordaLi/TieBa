@@ -26,10 +26,10 @@ public class TieZi {
        this(UUID.randomUUID());
     }
 
-    public TieZi(UUID id){
-        mId = id;
+    public TieZi(UUID mid){
+        mId = mid;
         mDate = new Date();
-        mCommentlist = new Commentlist(id);
+        mCommentlist = new Commentlist(mid);
 
         for(int i=0;i<5;i++){
             Comment comment = new Comment();
