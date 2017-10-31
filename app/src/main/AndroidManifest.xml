@@ -24,6 +24,11 @@
             android:parentActivityName=".TieZiListActivity">
 
         </activity>
+
+        <activity android:name=".CommentShowActivity">
+
+        </activity>
+
     </application>
 
 </manifest>

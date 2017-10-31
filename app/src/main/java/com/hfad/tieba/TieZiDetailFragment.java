@@ -21,6 +21,7 @@ public class TieZiDetailFragment extends Fragment {
     private static final String ARG_TIEZI_ID="TIEZI_ID";
     private static final String DIALOG_COMMENT = "DialogComment";
 
+
     private RecyclerView mRecyclerView;
     private DetailAdapter mDetailAdapter;
     private TieZi mTieZi;
@@ -75,15 +76,14 @@ public class TieZiDetailFragment extends Fragment {
         private TextView mContent;
         private TextView mCommentView;
         private TieZi mTieZi;
-        private CommentLab mCommentLab;
+
 
         public TieZiDetailHolder(LayoutInflater inflater, ViewGroup parent) {
             super(inflater.inflate(R.layout.list_item_tiezi,parent,false));
             mTitle = (TextView)itemView.findViewById(R.id.tiezi_title1);
             mContent = (TextView)itemView.findViewById(R.id.tiezi_content1);
             mCommentView = (TextView)itemView.findViewById(R.id.commentTextView);
-            mCommentLab = CommentLab.get(getActivity());
-            mCommentLab.add(mTieZi.getCommentlist());
+
         }
 
         public void bind(TieZi tz){

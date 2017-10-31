@@ -28,8 +28,6 @@ public class Commentlist {
     }
 
 
-
-
     public List<Comment> getCommentList() {
         return mCommentList;
     }
@@ -41,6 +39,8 @@ public class Commentlist {
     public void add(Comment comment){
         mCommentList.add(comment);
     }
+
+
 
 
 }

@@ -7,28 +7,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <LinearLayout
+        android:id="@+id/detail_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <android.support.v7.widget.RecyclerView
         android:id="@+id/tiezi_recycler_view_xiangqing"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="150dp">
     </android.support.v7.widget.RecyclerView>
-
-
+    </LinearLayout>
 
     <TextView
-        android:paddingTop="30dp"
+        android:paddingTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
-        android:text="评论："/>
+        android:text="回复："
+        android:textSize="20dp"/>
 
-    <android.support.v7.widget.RecyclerView
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/tiezi_recycler_view_pinglun"
+
+
+    <LinearLayout
+        android:id="@+id/commentlayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+    <android.support.v7.widget.RecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:paddingTop="20dp"
+        android:id="@+id/tiezi_recycler_view_pinglun"
+        android:layout_width="match_parent"
+        android:layout_height="500dp">
     </android.support.v7.widget.RecyclerView>
-
+    </LinearLayout>
 
 
 

@@ -13,6 +13,13 @@ public class Comment {
     private Date mDate;
     private String comment;
 
+    public Comment(String s){
+        comment=s;
+    }
+
+    public Comment(){
+
+    }
 
     public UUID getUUID() {
         return mUUID;

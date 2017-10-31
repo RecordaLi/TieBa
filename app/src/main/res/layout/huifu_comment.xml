@@ -47,7 +47,7 @@
             android:singleLine="true"
             android:textColor="@color/defaultShowColor"
             android:textSize="16sp"
-            android:text="回复课程表的评论"/>
+            android:text="回复帖子的评论"/>
 
         <!--
         <FrameLayout

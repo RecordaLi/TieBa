@@ -153,6 +153,9 @@ public class TieZiListFragment extends Fragment {
             //Intent intent = new Intent(getActivity(),TieZiDetailActivity.class);
             Intent intent = TieZiDetailActivity.newIntent(getActivity(),tiezi.getId());
             startActivity(intent);
+
+//            Intent intent1 = CommentShowActivity.newIntent(getActivity(),tiezi.getId());
+//            startActivity(intent1);
         }
     }
 
